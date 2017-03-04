@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Draggable, Holdable, defineHold } from 'react-touch';
 import moment from 'moment';
 
-let styles = {
+const styles = {
   progressBase: {
     backgroundColor: 'white',
     opacity: '0.3',
@@ -12,7 +11,6 @@ let styles = {
     content: ' ',
     borderRadius: '50px',
   },
-
 };
 
 class TrackTimer extends Component {
@@ -31,39 +29,27 @@ class TrackTimer extends Component {
       top: '3px',
       width: `${progressValue}%`,
     };
+    const pointer = {
+      width: '12px',
+      height: '12px',
+      borderRadius: '50%',
+      backgroundColor: 'white',
+      position: 'relative',
+      top: '10px',
+      left: '90%',
+    };
 
     console.log(progressValue);
     const currentTime = moment(this.props.currentTime * 1000).format('mm:ss');
     const timeLeft = moment(this.props.track.duration - (this.props.currentTime * 1000)).format('mm:ss');
-    const hold = defineHold({ updateEvery: 50, holdFor: 500});
     return (
       <div className="pl4 pr4 mb4">
         <div className="flex justify-between">
           <span className="white">{currentTime}</span>
           <span className="white">-{(this.props.track.duration ? timeLeft : '00:00')}</span>
         </div>
-  <Draggable position={{translateX: 0, translateY: 0}}>
-    {({translateX, translateY }) => {
-
-      const pointer = {
-        width: '12px',
-        height: '12px',
-        borderRadius: '50%',
-        backgroundColor: 'white',
-        position: 'relative',
-        top: '10px',
-        left: '0%',
-        transform: `translate3d(${translateX}px, 0, 0)`,
-      };
-
-      console.log(pointer.transform);
-
-      return (
-        <div style={pointer}></div>
-      );
-    }}
-  </Draggable>
         <div onClick={() => this.onClick()}>
+          <div style={pointer}></div>
           <div style={progress}></div>
           <div style={styles.progressBase}></div>
         </div>
