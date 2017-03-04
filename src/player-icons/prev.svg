@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="19px" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>prev</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="prev" fill-rule="nonzero" fill="#C4C4C4">
+            <g id="a-link" transform="translate(7.500000, 9.500000) rotate(180.000000) translate(-7.500000, -9.500000) translate(-0.000000, 0.000000)">
+                <path d="M12.5,0 C11.3954305,-6.76353751e-17 10.5,0.8954305 10.5,2 L10.5,7.287 L1.594,0.717 C1.29058669,0.49296539 0.886933269,0.458700256 0.550098034,0.62838576 C0.213262798,0.798071265 0.000552258682,1.14283844 0,1.52 L0,17.478 C-0.000201999028,17.8555216 0.21221948,18.2009786 0.5492059,18.3711631 C0.886192319,18.5413476 1.29029706,18.5072479 1.594,18.283 L10.5,11.713 L10.5,17 C10.5,18.1045695 11.3954305,19 12.5,19 C13.6045695,19 14.5,18.1045695 14.5,17 L14.5,2 C14.5,0.8954305 13.6045695,6.76353751e-17 12.5,0 Z" id="a"></path>
+            </g>
+        </g>
+    </g>
+</svg>

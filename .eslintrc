@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb"
+  ],
+  "rules": {
+    "camelcase": "off",
+    "new-cap": "off",
+    "no-continue": "off",
+    "arrow-body-style": "off",
+    "no-return-assign": "off", // airbnb use error, handy for react ref assign.
+    "react/prop-types": "warn",
+    "react/jsx-handler-names": [
+      "warn",
+      {
+        "eventHandlerPrefix": "handle",
+        "eventHandlerPropPrefix": "on"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-max-props-per-line": [
+      "warn",
+      {
+        "maximum": 3
+      }
+    ],
+    "react/no-danger": "error",
+    "react/no-direct-mutation-state": "error"
+  }
+}
